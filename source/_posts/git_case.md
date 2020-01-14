@@ -22,3 +22,5 @@
    git branch -m master# 
 * Finally, force update your repository
    git push -f origin master
+* 这时候，从其他分支合并这个干净分支的时候，如果出现提示：`fatal: refusing to merge unrelated histories`，那么可以用以下命令来合并：`git merge master --allow-unrelated-histories`
+* 或者`git push`报`fatal: refusing to merge unrelated histories`,`git pull origin master --allow-unrelated-histories`
